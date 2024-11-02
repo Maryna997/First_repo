@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "salary_app"
+authors = [
+    {name = "Josiah Carberry", email = "josiah_carberry@brown.edu"},
+]
+description = "Application that will calculate salaries"
+requires-python = ">=3.8"
+dynamic = ["version"]
+dependencies = [
+    "app_classes",
+    "helper_functions",
+    "colorama==0.4.6"
+]
+
+[project.scripts]
+salary_app_executable = "main:main_loop"

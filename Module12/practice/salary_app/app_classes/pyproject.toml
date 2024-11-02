@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "app_classes"
+authors = [
+    {name = "Josiah Carberry", email = "josiah_carberry@brown.edu"},
+]
+description = "Module for our classes"
+requires-python = ">=3.8"
+dynamic = ["version"]
+
+# python3 -m salary_app.main
+# pip install -e .
